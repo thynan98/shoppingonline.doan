@@ -137,7 +137,7 @@ class Mycart extends Component {
       const result = res.data;
 
       if (result) {
-        alert('Đặt hàng thành công! Cảm ơn bạn đã mua sắm tại Đoan Home.');
+        alert('Đặt hàng thành công! Cảm ơn bạn đã mua sắm tại Nội thất Home.');
         this.context.setMycart([]);
         this.props.navigate('/home');
       } else {
