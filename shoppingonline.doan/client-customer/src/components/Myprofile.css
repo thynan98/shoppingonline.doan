@@ -1,0 +1,92 @@
+.myprofile-container {
+  min-height: 100vh;
+  background: #f8f5f0;           /* Nền be nhạt – phù hợp nội thất */
+  padding: 24px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.myprofile-card {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f3e9d8;
+}
+
+.myprofile-title {
+  text-align: center;
+  color: #b45309;                /* Màu nâu gỗ chính */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.myprofile-form {
+  width: 100%;
+}
+
+.myprofile-group {
+  margin-bottom: 20px;
+}
+
+.myprofile-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #4b5563;                /* Màu xám đậm thay vì đỏ */
+  font-size: 14.5px;
+}
+
+.myprofile-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  background: #ffffff;
+}
+
+.myprofile-input:focus {
+  border-color: #b45309;         /* Focus theo tone nâu gỗ */
+  box-shadow: 0 0 0 4px rgba(180, 83, 9, 0.12);
+}
+
+.myprofile-btn {
+  width: 100%;
+  border: none;
+  background: #b45309;           /* Nút chính màu nâu gỗ */
+  color: #ffffff;
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.myprofile-btn:hover {
+  background: #92400e;           /* Nâu đậm hơn khi hover */
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .myprofile-container {
+    padding: 12px;
+  }
+
+  .myprofile-card {
+    padding: 20px 16px;
+  }
+
+  .myprofile-title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,81 @@
+.customer-menu-bar {
+  background: #b45309;           /* Màu nâu gỗ chủ đạo */
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.customer-menu-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.customer-brand-logo {
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.customer-menu-list {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.customer-menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.25s ease;
+}
+
+.customer-menu-link:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.customer-search-form {
+  display: flex;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.customer-search-input {
+  flex: 1;
+  border: none;
+  padding: 12px 16px;
+  outline: none;
+  font-size: 14px;
+}
+
+.customer-search-btn {
+  background: #b45309;           /* Nút tìm kiếm cùng tone với header */
+  border: none;
+  padding: 0 24px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.customer-search-btn:hover {
+  background: #92400e;           /* Nâu đậm hơn khi hover */
+}

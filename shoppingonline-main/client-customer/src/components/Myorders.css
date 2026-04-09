@@ -1,0 +1,118 @@
+/* ============================================= */
+/* ===== MYORDERS - ĐƠN HÀNG CỦA TÔI ===== */
+/* ============================================= */
+
+.myorders-container {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.myorders-section {
+  margin-bottom: 50px;
+}
+
+.myorders-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 5px solid #e30613;   /* Đường viền đỏ nổi bật */
+}
+
+/* ==================== TABLE WRAPPER ==================== */
+.modern-table-wrapper {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f1e9df;        /* Viền kem nhạt hợp nội thất */
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* ==================== TABLE ==================== */
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.modern-table th {
+  background: #f8f5f0;              /* Nền beige ấm áp */
+  color: #444444;
+  font-weight: 700;
+  padding: 18px 16px;
+  font-size: 14.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 3px solid #e30613; /* Viền đỏ mạnh mẽ */
+}
+
+.modern-table td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #f3ede4;
+  color: #1f2937;
+  font-size: 15.5px;
+  vertical-align: middle;
+}
+
+.modern-table tbody tr:hover {
+  background: #fdfaf5;              /* Hover nhẹ, ấm áp */
+  cursor: pointer;
+}
+
+/* ==================== STATUS ==================== */
+.myorders-status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.myorders-status.pending    { background: #fef3c7; color: #b45309; }
+.myorders-status.approved   { background: #dbeafe; color: #1e40af; }
+.myorders-status.shipping   { background: #d1fae5; color: #065f46; }
+.myorders-status.completed  { background: #ecfdf5; color: #10b981; }
+.myorders-status.cancelled  { background: #fee2e2; color: #ef4444; }
+
+/* ==================== IMAGE ==================== */
+.myorders-image {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e5e0d8;
+}
+
+/* ==================== NO ORDER SELECTED ==================== */
+.no-order-selected {
+  text-align: center;
+  padding: 80px 20px;
+  color: #6b7280;
+  font-size: 17px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+  .modern-table th,
+  .modern-table td {
+    padding: 14px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .myorders-title {
+    font-size: 24px;
+  }
+  
+  .myorders-image {
+    width: 50px;
+    height: 50px;
+  }
+}

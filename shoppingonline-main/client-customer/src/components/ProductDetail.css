@@ -1,0 +1,229 @@
+/* ============================================= */
+/* ===== PRODUCT DETAIL - NỘI THẤT ===== */
+/* ============================================= */
+
+.customer-content {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  padding: 50px 45px;
+  margin-bottom: 40px;
+}
+
+.detail-split-layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.detail-image-col {
+  flex: 1;
+  min-width: 45%;
+}
+
+.detail-main-image-wrapper {
+  background: #fdfaf5;           /* Nền kem nhạt rất hợp nội thất */
+  border-radius: 20px;
+  border: 1px solid #f1e9df;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.detail-main-image {
+  max-width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.detail-main-image-wrapper:hover .detail-main-image {
+  transform: scale(1.04);
+}
+
+.detail-info-col {
+  flex: 1;
+  min-width: 50%;
+}
+
+/* Category Badge */
+.detail-category-badge {
+  background: #fefce8;           /* Vàng nhạt ấm */
+  color: #92400e;                /* Nâu gỗ */
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.detail-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.25;
+  margin: 12px 0 24px;
+  letter-spacing: -0.5px;
+}
+
+/* Price Box */
+.detail-price-box {
+  background: #fdfaf5;
+  border: 1px solid #f1e9df;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.price-label {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+.price-value {
+  font-size: 38px;
+  font-weight: 800;
+  color: #e30613;           /* Giữ đỏ nổi bật giống Header */
+}
+
+/* Specs */
+.detail-specs h3 {
+  font-size: 18px;
+  color: #1f2937;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.detail-specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.detail-specs li {
+  background: #f8f5f0;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #374151;
+  border: 1px solid #e5e0d8;
+}
+
+/* Actions */
+.detail-actions {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f1e9df;
+}
+
+.qty-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.qty-selector label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+.qty-input {
+  width: 90px;
+  padding: 14px;
+  border: 2px solid #e5e0d8;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.qty-input:focus {
+  border-color: #e30613;
+}
+
+.detail-add-btn {
+  flex: 1;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 16px 28px;
+  background: #e30613;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+}
+
+.detail-add-btn:hover {
+  background: #c00410;
+  transform: translateY(-2px);
+}
+
+/* Assurance */
+.detail-assurance {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.assurance-item {
+  font-size: 15px;
+  color: #166534;           /* Xanh lá đậm, tin cậy */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .detail-split-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .detail-image-col {
+    min-width: 100%;
+  }
+  
+  .detail-main-image {
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .detail-card {
+    padding: 30px 20px;
+  }
+  
+  .detail-title {
+    font-size: 28px;
+  }
+  
+  .price-value {
+    font-size: 32px;
+  }
+}

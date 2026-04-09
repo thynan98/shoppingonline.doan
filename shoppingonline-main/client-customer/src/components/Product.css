@@ -1,0 +1,136 @@
+/* ==================== PRODUCT GRID ==================== */
+.modern-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  width: 100%;
+}
+
+/* ==================== PRODUCT CARD ==================== */
+.modern-product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #f3e9d8;
+  display: flex;
+  flex-direction: column;
+  height: 100%;                    /* Rất quan trọng */
+}
+
+.modern-product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.modern-product-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ảnh sản phẩm */
+.product-image-container {
+  width: 100%;
+  height: 245px;
+  overflow: hidden;
+  background: #f8f5f0;
+  flex-shrink: 0;
+}
+
+.modern-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.modern-product-card:hover .modern-product-image {
+  transform: scale(1.07);
+}
+
+/* Phần thông tin - Đây là phần quan trọng nhất để sửa chữ bị cắt */
+.modern-product-info {
+  padding: 20px 18px 24px;
+  text-align: center;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;                    /* Cho phép text ellipsis hoạt động */
+}
+
+.modern-product-name {
+  font-size: 16.5px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 14px 0;
+  line-height: 1.4;
+  flex-grow: 1;
+  
+  /* Cho phép tối đa 3 dòng */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.modern-product-price {
+  font-size: 18.5px;
+  font-weight: 700;
+  color: #b45309;
+  margin-top: auto;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #b45309;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.product-count {
+  font-size: 14.5px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.no-products-msg {
+  text-align: center;
+  padding: 80px 20px;
+  color: #6b7280;
+  font-size: 16.5px;
+  grid-column: 1 / -1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modern-product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-image-container {
+    height: 210px;
+  }
+  
+  .modern-product-name {
+    font-size: 16px;
+  }
+}
